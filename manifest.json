@@ -1,0 +1,12 @@
+{
+
+    "manifest_version": 2,
+    "name" : "Amazon Price Tracker",
+    "version": "1.0",
+    "description": "An extension that tracks the amazon prices",
+    "browser_action": {
+
+        "default_popup": "popup.html"
+    }
+
+}
