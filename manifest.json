@@ -4,6 +4,19 @@
     "name" : "Amazon Price Tracker",
     "version": "1.0",
     "description": "An extension that tracks the amazon prices",
+    "content_scripts" : [
+        {
+            "matches" : [
+                "http://amazon.in/*",
+                "https://amazon.in/*"
+            ],
+            "js" : ["content.js"]
+        }
+    ],
+    "background":{
+        "scripts" : ["background.js"],
+        "persistent" : false
+    },
     "browser_action": {
 
         "default_popup": "popup.html"
